@@ -1,15 +1,14 @@
-\documentclass[a4paper,latin]{paper} 
-\usepackage{babel}  
+\documentclass[a4paper]{paper}
+\usepackage{biblatex}
+\addbibresource{sample.bib} % Imports the bibliography file
 \usepackage[margin=2.5cm]{geometry}
-\usepackage{graphicx}
 \usepackage{lipsum}
 \usepackage{xcolor}
-\usepackage{booktabs}
 \sectionfont{\large\sf\bfseries\color{black!70!blue}} 
 \renewcommand\keywordname{Keywords}
 
 \title{Title here}
-\author{Author here}
+\author{Authors here}
 
 \institution{Institution name here}
 
@@ -19,12 +18,12 @@
 ]
 
 \textbf{
-Abstract - \lipsum[1]
+\textit{Abstract} - \lipsum[1]
 }
 
 \section{Introduction} 
 
-Some introduction. \lipsum[2]
+Some introduction. How to cite? When referring to a resource use this: \cite{yaggi2006sleep}. \lipsum[2]
 
 \section{Related work} 
 
@@ -32,10 +31,12 @@ More dummy text. \lipsum[4]
 
 \section{Design} 
 
-Main work. May include other sections as well as subsections. \lipsum[5]
+These are the results. \lipsum[5]
 
 \section{Conclusion and future work} 
 
-\lipsum[6] 
+\lipsum[6]
+
+\printbibliography %Prints bibliography
 
 \end {document}
